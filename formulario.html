@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form style="margin-top:30px; margin-left: 15px; font-family: Helvetica; font-size:18px; font-weight: lighter;"
+        action="http://moodle.danielcastelao.org/daw/action_page.php" method="GET" enctype="text/plain">
+        <label for="nif">NIF:</label>
+        <input style="margin-bottom: 30px" type="text" name="nif" size="30" maxlength="35"><br>
+        <label for="fname">Nombre:</label>
+        <input style="margin-bottom: 20px;" type="text" name="fname" size="30" maxlength="35"><br>
+        <label for="lname">Apellidos:</label>
+        <input type="text" name="lname" size="45" maxlength="50"><br>
+        <p style="margin-bottom: 1px">Edad:</p>
+        <input type="radio" id="css" name="edad" value="15-19">
+        <label for="15-29">15-29</label><br>
+        <input type="radio" id="css" name="edad" value="20-29" checked>
+        <label for="20-29">20-29</label><br>
+        <input type="radio" id="css" name="edad" value="30-40">
+        <label for="30-40">30-40</label><br>
+        <p style="margin-top:20px; margin-bottom: 1px">Estado civil:</p>
+        <select name="estado_civil" id="estado_civil" multiple="multiple">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+        </select>
+        <br>
+        <p style="margin-top: 20px; margin-bottom: 1px">Aficiones:</p>
+        <input type="checkbox" id="aficion1" name="aficion1" value="Cine">
+        <label for="cine">Cine</label><br>
+        <input type="checkbox" id="aficion2" name="aficion2" value="Deportes" checked>
+        <label for="Deportes">Deportes</label><br>
+        <input type="checkbox" id="aficion3" name="aficion3" value="Lectura">
+        <label for="Lectura">Lectura</label><br>
+        <input type="checkbox" id="aficion4" name="aficion4" value="Senderismo">
+        <label for="Senderismo">Senderismo</label><br>
+        <p style="margin-bottom: 1px;">Comentarios:</p>
+        <textarea style="font-size: 15px;" name="textarea" rows="10" cols="50">Escribe aquí tus comentarios</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
